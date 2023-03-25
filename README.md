@@ -7,7 +7,13 @@
   <h1>Dev Society's Data Structures & Algorithms</h1>
 
   <!-- Labels & Badges -->
-  
+  <img src="https://img.shields.io/github/contributors/Dev-Society-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="Contributors">
+
+  <img src="https://img.shields.io/github/forks/Dev-Society-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="Forks">
+
+  <img src="https://img.shields.io/github/stars/Dev-Society-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="Stars">
+
+  <img src="https://img.shields.io/github/license/Dev-Society-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="License">
 
   <!-- Short description: -->
   <p><i>By Monterrey Institute of Technology CS Students - for education.</i></p>
