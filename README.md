@@ -7,7 +7,13 @@
   <h1>Dev Society's Data Structures & Algorithms</h1>
 
   <!-- Labels & Badges -->
-  
+  <img src="https://img.shields.io/github/contributors/Dev-Society-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="Contributors">
+
+  <img src="https://img.shields.io/github/forks/Dev-Society-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="Forks">
+
+  <img src="https://img.shields.io/github/stars/Dev-Society-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="Stars">
+
+  <img src="https://img.shields.io/github/license/Dev-Society-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="License">
 
   <!-- Short description: -->
   <p><i>By Monterrey Institute of Technology CS Students - for education.</i></p>
@@ -18,14 +24,14 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#">Linked List</a></li>
-    <li><a href="#">Stack</a></li>
-    <li><a href="#">Queue</a></li>
-    <li><a href="#">Hash Table</a></li>
-    <li><a href="#">Heap</a></li>
-    <li><a href="#">Trie</a></li>
-    <li><a href="#">Tree</a></li>
-    <li><a href="#">Graph</a></li>
+    <li><a href="dataStructures/linkedList">Linked List</a></li>
+    <li><a href="dataStructures/stack">Stack</a></li>
+    <li><a href="dataStructures/queue">Queue</a></li>
+    <li><a href="dataStructures/hashTable">Hash Table</a></li>
+    <li><a href="dataStructures/heap">Heap</a></li>
+    <li><a href="dataStructures/trie">Trie</a></li>
+    <li><a href="dataStructures/tree">Tree</a></li>
+    <li><a href="dataStructures/graph">Graph</a></li>
   </ol>
 </details>
 
@@ -33,16 +39,20 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#">Mathematical</a></li>
-    <li><a href="#">Sorting</a></li>
-    <li><a href="#">Searching</a></li>
-    <li><a href="#">String Processing</a></li>
-    <li><a href="#">Geometric</a></li>
-    <li><a href="#">Graph</a></li>
-    <li><a href="#">Compression</a></li>
-    <li><a href="#">Encryption</a></li>
+    <li><a href="algorithms/mathematical">Mathematical</a></li>
+    <li><a href="algorithms/sorting">Sorting</a></li>
+    <li><a href="algorithms/searching">Searching</a></li>
+    <li><a href="algorithms/stringProcessing">String Processing</a></li>
+    <li><a href="algorithms/geometric">Geometric</a></li>
+    <li><a href="algorithms/graph">Graph</a></li>
+    <li><a href="algorithms/compression">Compression</a></li>
+    <li><a href="algorithms/encryption">Encryption</a></li>
   </ol>
 </details>
+
+<!-- Contributing -->
+<h2>Contributing</h2>
+<p>Read through our <a href="CONTRIBUTING.md">Contribution Guidelines</a> before you contribute.</p>
 
 <!-- Languages -->
 <h2>Languages</h2>
@@ -51,7 +61,3 @@
   <img src="images/logo-python.png" width="50">
   <img src="images/logo-javascript.png" width="50">
 </div>
-
-<!-- Contributing -->
-<h2>Contributing</h2>
-<p>Read through our Contribution Guidelines before you contribute.</p>
