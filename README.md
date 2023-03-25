@@ -39,6 +39,8 @@
     <li><a href="#">String Processing</a></li>
     <li><a href="#">Geometric</a></li>
     <li><a href="#">Graph</a></li>
+    <li><a href="#">Compression</a></li>
+    <li><a href="#">Encryption</a></li>
   </ol>
 </details>
 
