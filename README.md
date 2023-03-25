@@ -52,7 +52,7 @@
 
 <!-- Contributing -->
 <h2>Contributing</h2>
-<p>Read through our Contribution Guidelines before you contribute.</p>
+<p>Read through our <a href="CONTRIBUTING.md">Contribution Guidelines</a> before you contribute.</p>
 
 <!-- Languages -->
 <h2>Languages</h2>
