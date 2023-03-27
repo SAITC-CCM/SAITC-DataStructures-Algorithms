@@ -24,14 +24,15 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="dataStructures/linkedList">
-        <summary>Linked List</summary>
+    <li>
+      <a href="dataStructures/linkedList">
+        Linked List
+        <details>
+          <ol>
+            <li><a href="dataStructures/stack">Stack</a></li>
+          </ol>
+        </details>
       </a>
-      <details>
-        <ol>
-          <li><a href="dataStructures/linkedList/singlyLinkedList">Singly Linked List</a></li>
-        </ol>
-      </details>
     </li>
     <li><a href="dataStructures/stack">Stack</a></li>
     <li><a href="dataStructures/queue">Queue</a></li>
