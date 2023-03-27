@@ -3,7 +3,7 @@ A Linked List is a *linear data structure* whose elements are linked through the
 
 ## Implementations
 <ol>
-    <li><a href="dataStructures/linkedList/singlyLinkedList">
+    <li><a href="singlyLinkedList">
         Singly Linked List
     </a></li>
 </ol>

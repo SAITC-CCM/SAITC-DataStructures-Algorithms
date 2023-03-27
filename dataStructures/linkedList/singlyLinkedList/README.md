@@ -4,7 +4,7 @@ A Singly Linked List is a *linked list* whose nodes have only two attributes, *d
 
 <!-- Illustration -->
 <div align="center">
-    <img src="../../../images/ds-singlylinkedlist.png" height="100">
+    <img src="../../../images/ds-singlylinkedlist.png" height="70%">
     <p><i>Example Image</i></p>
 </div>
 
