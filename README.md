@@ -29,7 +29,7 @@
         Linked List
         <details>
           <ol>
-            <li><a href="dataStructures/linkedList">Stack</a></li>
+            <li><a href="dataStructures/linkedList">Linked List</a></li>
           </ol>
         </details>
       </a>
