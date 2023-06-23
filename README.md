@@ -62,6 +62,12 @@
 <!-- Contributing -->
 <h2>Contributing</h2>
 <p>Read through our <a href="CONTRIBUTING.md">Contribution Guidelines</a> before you contribute.</p>
+<!-- Contributors -->
+<a href="https://github.com/Dev-Society-CCM/DevSociety-DataStructures-Algorithms/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Dev-Society-CCM/DevSociety-DataStructures-Algorithms" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
 
 <!-- Languages -->
 <h2>Languages</h2>
@@ -71,9 +77,3 @@
   <img src="images/logo-javascript.png" width="50">
 </div>
 
-<!-- Contributors -->
-<a href="https://github.com/Dev-Society-CCM/DevSociety-DataStructures-Algorithms/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Dev-Society-CCM/DevSociety-DataStructures-Algorithms" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
