@@ -72,9 +72,8 @@
 </div>
 
 <!-- Contributors -->
-<div align="center">
 <a href="https://github.com/Dev-Society-CCM/DevSociety-DataStructures-Algorithms/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Dev-Society-CCM/DevSociety-DataStructures-Algorithms" />
 </a>
+
 Made with [contrib.rocks](https://contrib.rocks).
-</div>
