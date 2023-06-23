@@ -44,9 +44,10 @@
       <a href="dataStructures/graph">
         Graph
         <details>
-          <summary></summary>
+          <summary>Graph Traversal Algorithm's</summary>
           <ol>
-            <li><a href="dataStructures/graph">Graph Traversal Algorithm's</a></li>
+            <li><a href="dataStructures/graph/depth-first-search"></a></li>
+            <li><a href="dataStructures/graph/breadth-first-search"></a></li>
           </ol>
         </details>
       </a>
