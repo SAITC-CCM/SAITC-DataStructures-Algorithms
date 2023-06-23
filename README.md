@@ -44,10 +44,10 @@
       <a href="dataStructures/graph">
         Graph
         <details>
-          <summary>Graph Traversal Algorithm's</summary>
+          <summary><a href="dataStructures/graph/graphTraversalAlgorithms/">Graph Traversal Algorithm's</a></summary>
           <ol>
-            <li>Depth First Search <a href="dataStructures/graph/graphTraversalAlgorithms/depthFirstSearch/">Non optimized</a> | <a href="dataStructures/graph/graphTraversalAlgorithms/depthFirstSearchOptimized/">Optimized</a></li>
-            <li>Breadth First Search <a href="dataStructures/graph/graphTraversalAlgorithms/breadthFirstSearch/">Non optimized</a> | <a href="dataStructures/graph/graphTraversalAlgorithms/breadthFirstSearchOptimized/">Optimized</a></li>
+            <li>Depth First Search : Non Optimized | Optimized</li>
+            <li>Breadth First Search : Non Optimized | Optimized</li>
           </ol>
         </details>
       </a>
