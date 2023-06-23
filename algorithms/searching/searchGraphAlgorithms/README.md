@@ -15,4 +15,10 @@ Traversing Graphs with multiple techniques.
     <li><a href="depthFirstSearchOptimized">
         Depth First Search Optimized
     </a></li>
+    <li><a href="greedyBestFirstSearch">
+        Greedy Best First Search
+    </a></li>
+    <li><a href="A*search">
+        A* Search
+    </a></li>
 </ol>
