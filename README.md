@@ -40,18 +40,7 @@
     <li><a href="dataStructures/heap">Heap</a></li>
     <li><a href="dataStructures/trie">Trie</a></li>
     <li><a href="dataStructures/tree">Tree</a></li>
-    <li>
-      <a href="dataStructures/graph">
-        Graph
-        <details>
-          <summary><a href="dataStructures/graph/graphTraversalAlgorithms/">Graph Traversal Algorithm's</a></summary>
-          <ol>
-            <li>Depth First Search</li>
-            <li>Breadth First Search</li>
-          </ol>
-        </details>
-      </a>
-    </li>
+    <li><a href="dataStructures/graph">Graph</a></li>
   </ol>
 </details>
 
@@ -61,7 +50,18 @@
   <ol>
     <li><a href="algorithms/mathematical">Mathematical</a></li>
     <li><a href="algorithms/sorting">Sorting</a></li>
-    <li><a href="algorithms/searching">Searching</a></li>
+    <li>
+      <a href="algorithms/searching">Searching</a>
+      <details>
+          <summary><a href="algorithms/searching/searchGraphAlgorithms/">Searching Graph Algorithm's</a></summary>
+          <ol>
+            <li>Depth First Search</li>
+            <li>Breadth First Search</li>
+            <li>Greedy Best First Search</li>
+            <li>A* Search</li>
+          </ol>
+        </details>
+    </li>
     <li><a href="algorithms/stringProcessing">String Processing</a></li>
     <li><a href="algorithms/geometric">Geometric</a></li>
     <li><a href="algorithms/graph">Graph</a></li>
