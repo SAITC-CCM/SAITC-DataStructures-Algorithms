@@ -46,8 +46,8 @@
         <details>
           <summary><a href="dataStructures/graph/graphTraversalAlgorithms/">Graph Traversal Algorithm's</a></summary>
           <ol>
-            <li>Depth First Search : Non Optimized | Optimized</li>
-            <li>Breadth First Search : Non Optimized | Optimized</li>
+            <li>Depth First Search</li>
+            <li>Breadth First Search</li>
           </ol>
         </details>
       </a>
