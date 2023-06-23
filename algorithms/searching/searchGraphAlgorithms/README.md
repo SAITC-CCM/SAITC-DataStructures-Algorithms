@@ -9,12 +9,6 @@ Traversing Graphs with multiple techniques.
     <li><a href="depthFirstSearch">
         Depth First Search Non Optimized
     </a></li>
-    <li><a href="breadthFirstSearchOptimized">
-        Breadth First Search Optimized
-    </a></li>
-    <li><a href="depthFirstSearchOptimized">
-        Depth First Search Optimized
-    </a></li>
     <li><a href="greedyBestFirstSearch">
         Greedy Best First Search
     </a></li>
