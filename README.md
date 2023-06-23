@@ -46,10 +46,8 @@
         <details>
           <summary>Graph Traversal Algorithm's</summary>
           <ol>
-            <li><a href="dataStructures/graph/graphTraversalAlgorithms/depthFirstSearch/">Depth First Search (Non optimized)</a></li>
-            <li><a href="dataStructures/graph/graphTraversalAlgorithms/breadthFirstSearch/">Breadth First Search (Non optimized)</a></li>
-            <li><a href="dataStructures/graph/graphTraversalAlgorithms/depthFirstSearchOptimized/">Depth First Search (Optimized)</a></li>
-            <li><a href="dataStructures/graph/graphTraversalAlgorithms/breadthFirstSearchOptimized/">Breadth First Search (Optimized)</a></li>
+            <li>Depth First Search <a href="dataStructures/graph/graphTraversalAlgorithms/depthFirstSearch/">Non optimized</a> | <a href="dataStructures/graph/graphTraversalAlgorithms/depthFirstSearchOptimized/">Optimized</a></li>
+            <li>Breadth First Search <a href="dataStructures/graph/graphTraversalAlgorithms/breadthFirstSearch/">Non optimized</a> | <a href="dataStructures/graph/graphTraversalAlgorithms/breadthFirstSearchOptimized/">Optimized</a></li>
           </ol>
         </details>
       </a>
