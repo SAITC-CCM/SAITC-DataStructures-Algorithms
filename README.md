@@ -40,7 +40,16 @@
     <li><a href="dataStructures/heap">Heap</a></li>
     <li><a href="dataStructures/trie">Trie</a></li>
     <li><a href="dataStructures/tree">Tree</a></li>
-    <li><a href="dataStructures/graph">Graph</a></li>
+    <li>
+      <a href="dataStructures/graph">
+        Graph
+        <details>
+          <ol>
+            <li><a href="dataStructures/graph">Graph Traversal Algorithm's</a></li>
+          </ol>
+        </details>
+      </a>
+    </li>
   </ol>
 </details>
 
