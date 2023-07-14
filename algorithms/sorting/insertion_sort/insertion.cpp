@@ -20,15 +20,4 @@ void insertion_sort(T *data, int size)
         data[j + 1] = key;
     }
 }
-#include <iostream>
-int main()
-{
-    int data[] = {5, 2, 4, 6, 1, 3};
-    insertion_sort(data, 6);
-    for (int i = 0; i < 6; i++)
-    {
-        std::cout << data[i] << " ";
-    }
-    std::cout << std::endl;
-    return 0;
-}
+
