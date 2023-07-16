@@ -1,3 +1,11 @@
+/**
+ * 
+ * @param {Array} arr the array from which the elements will be swaped
+ * @param {*} a the first position in the array
+ * @param {*} b the second position in the array
+ */
+const swap = (arr, a, b) => [arr[a], arr[b]] = [arr[b], arr[a]];
+
 /** 
  * @brief A simple bubble sort algorithm
  * @param {Array} arr
@@ -11,7 +19,7 @@ function bubbleSort(arr) {
         swapped = false;
         for(var j = 0; j < len - i - 1; j++) {
             if(arr[j] > arr[j+1]) {
-                [arr[j], arr[j+1]] = [arr[j+1], arr[j]]; // ES6 swap [a, b] = [b, a]
+                swap(arr, j, j+1);
                 swapped = true;
             }
         }
