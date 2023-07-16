@@ -4,7 +4,7 @@
  * @param {*} a the first position in the array
  * @param {*} b the second position in the array
  */
-const swap = (arr, a, b) => [arr[a], arr[b]] = [arr[b], arr[a]];
+export const swap = (arr, a, b) => [arr[a], arr[b]] = [arr[b], arr[a]];
 
 /** 
  * @brief A simple bubble sort algorithm
@@ -26,7 +26,5 @@ function bubbleSort(arr) {
         if(!swapped) 
             break;
     }
-    return arr;
 }
-
-console.log(bubbleSort([5, 4, 3, 2, 1]));
+export default bubbleSort;
