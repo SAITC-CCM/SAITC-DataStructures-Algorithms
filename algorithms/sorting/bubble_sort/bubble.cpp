@@ -4,40 +4,36 @@
  *
  * @tparam T
  */
+/**
+ * @brief Swaps two elements
+ *
+ * @param first
+ * @param second
+ */
 template <typename T>
-class BubbleSort
+void swap(T *first, T *second)
 {
-private:
-    /**
-     * @brief Swaps two elements
-     *
-     * @param first
-     * @param second
-     */
-    void swap(T *first, T *second)
+    T temp = *first;
+    *first = *second;
+    *second = temp;
+}
+/**
+ * @brief Sorts the array using bubble sort algorithm
+ *
+ * @param arr
+ * @param n
+ */
+template <typename T>
+void bubble_sort(T arr[], int n)
+{
+    for (int i = 0; i < n; i++)
     {
-        T temp = *first;
-        *first = *second;
-        *second = temp;
-    }
-public:
-    /**
-     * @brief Sorts the array using bubble sort algorithm
-     *
-     * @param arr
-     * @param n
-     */
-    void sort(T arr[], int n)
-    {
-        for (int i = 0; i < n; i++)
+        for (int j = 0; j < n - i - 1; j++)
         {
-            for (int j = 0; j < n - i - 1; j++)
+            if (arr[j] > arr[j + 1])
             {
-                if (arr[j] > arr[j + 1])
-                {
-                    swap(arr + j, arr + j + 1);
-                }
+                swap(arr + j, arr + j + 1);
             }
         }
     }
-};
+}
