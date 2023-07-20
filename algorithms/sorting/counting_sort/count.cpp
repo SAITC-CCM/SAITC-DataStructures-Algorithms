@@ -5,6 +5,12 @@
  * 
  */
 
+/**
+ * @brief Finds the maximum value in an array
+ * 
+ * @param arr 
+ * @return int 
+ */
 int max(int *arr){
     int max = arr[0];
     for(int i = 1; i < sizeof(arr); i++){
@@ -15,6 +21,12 @@ int max(int *arr){
     return max;
 }
 
+/**
+ * @brief Sorts an array using the counting sort algorithm
+ * 
+ * @param arr 
+ * @param size 
+ */
 void counting_sort(int *arr, int size){
     int max_value = max(arr);
     int *count = new int[max_value + 1];
