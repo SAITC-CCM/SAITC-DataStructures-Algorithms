@@ -62,16 +62,27 @@
     <li>
       <a href="algorithms/searching">Searching</a>
       <details>
-          <summary><a href="algorithms/searching/searchGraphAlgorithms/">Searching Graph Algorithm's</a></summary>
-          <ol>
-            <li>Depth First Search</li>
-            <li>Breadth First Search</li>
-            <li>Greedy Best First Search</li>
-            <li>A* Search</li>
+        <summary><a href="algorithms/searching/searchGraphAlgorithms/">Searching Graph Algorithm's</a></summary>
+        <ol>
+          <li>Depth First Search</li>
+          <li>Breadth First Search</li>
+          <li>Greedy Best First Search</li>
+          <li>A* Search</li>
           </ol>
+      </details>
+    </li>
+    <li><a href="algorithms/stringProcessing">String Processing</a>
+      <details>
+          <summary><a href="algorithms/stringProcessing/searching/">Searching Substrings & Palindromes</a></summary>
+          <ol>
+            <li><a href="algorithms/stringProcessing/searching/BM.h">Boyer-Moore Algorithm</a></li>
+            <li><a href="algorithms/stringProcessing/searching/KMP.h">Knuth-Morris-Pratt Algorithm</a></li>
+            <li><a href="algorithms/stringProcessing/searching/LCS.h">Longest Common Substring (DP)</a></li>
+            <li><a href="algorithms/stringProcessing/searching/Manacher.h">Manacher's Algorithm</a></li>
+            <li><a href="algorithms/stringProcessing/searching/ZPatter.h"></a>Z-Function Algorithm</li>
+            </ol>
         </details>
     </li>
-    <li><a href="algorithms/stringProcessing">String Processing</a></li>
     <li><a href="algorithms/geometric">Geometric</a></li>
     <li><a href="algorithms/graph">Graph</a></li>
     <li><a href="algorithms/compression">Compression</a></li>
