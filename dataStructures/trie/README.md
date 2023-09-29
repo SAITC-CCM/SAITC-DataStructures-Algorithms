@@ -3,7 +3,7 @@ A Trie is a *tree like structure* whose elements are a finite set of keys, where
 
 ## Implementations
 <ol>
-    <li><a href="singlyLinkedList">
-        Singly Linked List
+    <li><a href="standardTrie">
+        Standard Trie
     </a></li>
 </ol>

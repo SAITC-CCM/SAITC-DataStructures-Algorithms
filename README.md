@@ -29,7 +29,7 @@
         Linked List
         <details>
           <ol>
-            <li><a href="dataStructures/linkedList">Linked List</a></li>
+            <li><a href="dataStructures/linkedList/singlyLinkedList/">Singly Linked List</a></li>
           </ol>
         </details>
       </a>
@@ -38,7 +38,16 @@
     <li><a href="dataStructures/queue">Queue</a></li>
     <li><a href="dataStructures/hashTable">Hash Table</a></li>
     <li><a href="dataStructures/heap">Heap</a></li>
-    <li><a href="dataStructures/trie">Trie</a></li>
+    <li>
+      <a href="dataStructures/trie">
+      Trie
+      <details>
+          <ol>
+            <li><a href="dataStructures/trie/standardTrie/">Standard Trie</a></li>
+          </ol>
+        </details>
+      </a>
+    </li>
     <li><a href="dataStructures/tree">Tree</a></li>
     <li><a href="dataStructures/graph">Graph</a></li>
   </ol>
