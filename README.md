@@ -79,7 +79,7 @@
             <li><a href="algorithms/stringProcessing/searching/KMP.h">Knuth-Morris-Pratt Algorithm</a></li>
             <li><a href="algorithms/stringProcessing/searching/LCS.h">Longest Common Substring (DP)</a></li>
             <li><a href="algorithms/stringProcessing/searching/Manacher.h">Manacher's Algorithm</a></li>
-            <li><a href="algorithms/stringProcessing/searching/ZPatter.h"></a>Z-Function Algorithm</li>
+            <li><a href="algorithms/stringProcessing/searching/ZPattern.h"></a>Z-Function Algorithm</li>
             </ol>
         </details>
     </li>
