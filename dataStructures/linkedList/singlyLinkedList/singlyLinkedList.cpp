@@ -160,7 +160,7 @@ class SinglyLinkedList{
             }
         }
 
-        // Methods that sorts the elements of the list using bubble sort algorithm.
+        // Method that sorts the elements of the list using bubble sort algorithm.
         // Complexity: O(n²)
         void bubbleSort(bool reverse){
             T tempData;
@@ -179,6 +179,79 @@ class SinglyLinkedList{
 
                     aux = aux->next;
                 }
+            }
+        }
+        
+        // Method that sorts the elements of the list calling Merge Sort algorithm.
+        // Complexity: O(n log(n))
+        void mergeSort(){
+            this->head = this->mergeSort(0, this->size - 1);
+        }
+
+    private:
+        // Method that sorts the elements of the list using Merge Sort algorithm.
+        // Complexity: O(n log(n))
+        Node<T>* mergeSort(int left, int right){
+            if(left < right){
+                // Find the half index.
+                int half = (right + left) / 2;
+
+                // Instantiate Left and Right Sublists.s
+                SinglyLinkedList<T>* leftList = new SinglyLinkedList();
+                SinglyLinkedList<T>* rightList = new SinglyLinkedList();
+
+                // Instantiate an Auxiliare node to travers thorugh the lists.
+                Node<T>* aux = head;
+                bool correctOrder;
+
+                // Divide the list into to sublists and sort them.
+                for(int i = 0; i <= half; i++){
+                    leftList->addLast(aux->data);
+                    aux = aux->next;
+                }
+
+                for(int i = half + 1; i <= right; i++){
+                    rightList->addLast(aux->data);
+                    aux = aux->next;
+                }
+                
+                leftList->head = leftList->mergeSort(0, leftList->size - 1);
+                rightList->head = rightList->mergeSort(0, rightList->size - 1);
+
+                // Merge the sublists into a new one.
+                SinglyLinkedList<T>* mergeList = new SinglyLinkedList();
+                Node<T>* auxLeft = leftList->head;
+                Node<T>* auxRight = rightList->head;
+
+                while(auxLeft != NULL && auxRight != NULL){
+                    if(auxLeft->data < auxRight->data){
+                        mergeList->addLast(auxLeft->data);
+                        auxLeft = auxLeft->next;
+                    }else{
+                        mergeList->addLast(auxRight->data);
+                        auxRight = auxRight->next;
+                    }
+                }
+
+                if(auxLeft == NULL && auxRight == NULL){
+                    return mergeList->head;
+
+                }else if(auxLeft == NULL){
+                    while(auxRight != NULL){
+                        mergeList->addLast(auxRight->data);
+                        auxRight = auxRight->next;
+                    }
+                    
+                }else if(auxRight == NULL){
+                    while(auxLeft != NULL){
+                        mergeList->addLast(auxLeft->data);
+                        auxLeft = auxLeft->next;
+                    }
+                }
+
+                return mergeList->head;
+            }else{
+                return this->head;
             }
         }
 };
