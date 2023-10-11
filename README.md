@@ -4,16 +4,16 @@
   <img src="images/logo-tec.svg" height="100">
   <img src="images/logo-devsociety.png" height="100">
 
-  <h1>Dev Society's Data Structures & Algorithms</h1>
+  <h1>SAITC's Data Structures & Algorithms</h1>
 
   <!-- Labels & Badges -->
-  <img src="https://img.shields.io/github/contributors/Dev-Society-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="Contributors">
+  <img src="https://img.shields.io/github/contributors/SAITC-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="Contributors">
 
-  <img src="https://img.shields.io/github/forks/Dev-Society-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="Forks">
+  <img src="https://img.shields.io/github/forks/SAITC-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="Forks">
 
-  <img src="https://img.shields.io/github/stars/Dev-Society-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="Stars">
+  <img src="https://img.shields.io/github/stars/SAITC-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="Stars">
 
-  <img src="https://img.shields.io/github/license/Dev-Society-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="License">
+  <img src="https://img.shields.io/github/license/SAITC-CCM/DevSociety-DataStructures-Algorithms.svg?style=for-the-badge" height="20" alt="License">
 
   <!-- Short description: -->
   <p><i>By Monterrey Institute of Technology CS Students - for education.</i></p>
@@ -94,8 +94,8 @@
 <h2>Contributing</h2>
 <p>Read through our <a href="CONTRIBUTING.md">Contribution Guidelines</a> before you contribute.</p>
 <!-- Contributors -->
-<a href="https://github.com/Dev-Society-CCM/DevSociety-DataStructures-Algorithms/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Dev-Society-CCM/DevSociety-DataStructures-Algorithms" />
+<a href="https://github.com/SAITC-CCM/DevSociety-DataStructures-Algorithms/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SAITC-CCM/DevSociety-DataStructures-Algorithms" />
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks).
