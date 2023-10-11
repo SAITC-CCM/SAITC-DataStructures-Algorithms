@@ -188,6 +188,12 @@ class SinglyLinkedList{
             this->head = this->mergeSort(0, this->size - 1);
         }
 
+        // Method that sorts the elements of the list calling Quick Sort algorithm.
+        // Complexity: O(n log(n))
+        void quickSort(){
+            this->head = this->quickSortPrivate();
+        }
+
     private:
         // Method that sorts the elements of the list using Merge Sort algorithm.
         // Complexity: O(n log(n))
@@ -196,7 +202,7 @@ class SinglyLinkedList{
                 // Find the half index.
                 int half = (right + left) / 2;
 
-                // Instantiate Left and Right Sublists.s
+                // Instantiate Left and Right Sublists
                 SinglyLinkedList<T>* leftList = new SinglyLinkedList();
                 SinglyLinkedList<T>* rightList = new SinglyLinkedList();
 
@@ -254,4 +260,49 @@ class SinglyLinkedList{
                 return this->head;
             }
         }
+
+        // Method that sorts the elements of the list using Quick Sort algorithm.
+        // Complexity: O(n log(n))
+        Node<T>* quickSortPrivate(){
+            if(this->size > 1){
+                // Obtaining the pivot and the aux.
+                T pivot = this->head->data;
+                Node<T>* aux = this->head->next;
+
+                // Instantiate Left and Right Sublists
+                SinglyLinkedList<T>* leftList = new SinglyLinkedList();
+                SinglyLinkedList<T>* rightList = new SinglyLinkedList();
+
+                // If value is smaller than pivot goes to leftList,
+                // otherwise goes to rightList.
+                while(aux != NULL){
+                    if(aux->data < pivot){
+                        leftList->addLast(aux->data);
+                    }else{
+                        rightList->addLast(aux->data);
+                    }
+
+                    aux = aux->next;
+                }
+
+                // Apply quickSort to leftList and rightList.
+                leftList->head = leftList->quickSortPrivate();
+                rightList->head = rightList->quickSortPrivate();
+
+                // Merge leftList, the pivot and rightList.
+                leftList->addLast(pivot);
+                aux = leftList->head;
+                while(aux->next != NULL){
+                    aux = aux->next;
+                }
+                aux->next = rightList->head;
+
+                return leftList->head;
+
+            }else{
+                return this->head;
+            }
+        }
+
+
 };
