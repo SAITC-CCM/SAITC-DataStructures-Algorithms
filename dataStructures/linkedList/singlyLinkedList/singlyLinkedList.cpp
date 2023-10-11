@@ -159,4 +159,26 @@ class SinglyLinkedList{
                 temp = temp->next;
             }
         }
+
+        // Methods that sorts the elements of the list using bubble sort algorithm.
+        // Complexity: O(n²)
+        void bubbleSort(bool reverse){
+            T tempData;
+            for(int i = 0; i < size; i ++){
+                Node<T>* aux = head;
+                while(aux->next != NULL){
+                    if(aux->data < aux->next->data && reverse){
+                        tempData = aux->next->data;
+                        aux->next->data = aux->data;
+                        aux->data = tempData;
+                    }else if(aux->data > aux->next->data && !reverse){
+                        tempData = aux->next->data;
+                        aux->next->data = aux->data;
+                        aux->data = tempData;
+                    }
+
+                    aux = aux->next;
+                }
+            }
+        }
 };
