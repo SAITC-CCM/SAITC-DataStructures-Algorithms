@@ -2,7 +2,7 @@
 <div align="center">
   <!-- Title: -->
   <img src="images/logo-tec.svg" height="100">
-  <img src="images/logo-devsociety.png" height="100">
+  <img src="images/logo-saitc.png" height="100">
 
   <h1>SAITC's Data Structures & Algorithms</h1>
 
