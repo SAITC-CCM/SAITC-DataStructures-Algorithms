@@ -166,22 +166,25 @@ class DoublyLinkedList{
 
         // Method that deletes a node for a given index.
         // Complexity: O(n)
-        void deleteAt(int index){
+        T deleteAt(int index){
             if(index < 0 || index > this->size - 1){
                 throw -1;
             }else if(index == 0){
-                this->removeFirst();
+                return this->removeFirst();
             }else if(index == this->size - 1){
-                this->removeLast();
+                return this->removeLast();
             }else{
                 Node<T>* temp = this->head;
                 for(int i = 0; i < index - 1; i++){
                     temp = temp->next;
                 }
 
+                T returnValue = temp->next->data;
                 temp->next = temp->next->next;
                 temp->next->prev = temp;
                 size--;
+
+                return returnValue;
             }
         }
 
