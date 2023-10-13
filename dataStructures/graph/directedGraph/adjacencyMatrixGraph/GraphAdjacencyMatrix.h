@@ -6,6 +6,7 @@
 #define __GraphAdjacencyMatrix
 #pragma once
 
+#include "../../../queue/standardQueue/StandardQueue.h"
 using namespace std;
 
 template <class T> 
@@ -33,7 +34,7 @@ class Graph {
         }
 
         // Method that prints the adjacencyMatrix of the graph.
-        // Complexity: O(n²)
+        // Complexity: O(|V|)
         void print(){
             for (int i = 0; i < numNodes; i++) {
                 for (int j = 0; j < numNodes; j++){
@@ -63,7 +64,7 @@ class Graph {
 
         // Method that adds a weighted edge to the graph. If the node of origin
         // or the node of destination do are not found, a message is showed.
-        // Complexity: O(n)
+        // Complexity: O(|V|²)
         void addEdge(T node, T adjacency, int weight){
             try {
                 int indexNode = getIndex(node);
@@ -77,12 +78,26 @@ class Graph {
                 }
             }
         }
+
+        // Method that calls the BFS method for a given starting Position
+        // Complexity: O(|V|²) -> T(ni) = |V| + ∑T(nj), j € {1, 2,..., |Ei|}
+        void breadthFirstSearch(int startingIndex){
+            bool* visitedArray = new bool[numNodes];
+            StandardQueue<int>* indexesQueue = new StandardQueue<int>();
+
+            // Presets for BFS
+            indexesQueue->enqueue(startingIndex);
+            visitedArray[startingIndex] = true;
+            cout << indexesArray[startingIndex] << endl;
+
+            // Calling the recursiv method.
+            this->breadthFirstSearch(startingIndex, visitedArray, indexesQueue);
+        }
     
     private:
-
         // Method that finds the index of a given node ion the Graph
         // If the node is not found, a message is showed.
-        // Complexity: O(n).
+        // Complexity: O(|V|)
         int getIndex(T node){
             int index = -1;
             for(int i = 0; i < numNodes; i++){
@@ -98,6 +113,24 @@ class Graph {
                 throw -1;
             }
         }
+
+        // Method that recursively prints the BFS of a Graph for a given starting Position
+        // Complexity: O(|V|²) -> T(ni) = |V| + ∑T(nj), j € {1, 2,..., |Ei|}
+        void breadthFirstSearch(int startingIndex, bool* visitedArray, StandardQueue<int>* indexesQueue){
+            for(int i = 0; i < numNodes; i++){
+                if(adjacencyMatrix[startingIndex][i] != 0 && !visitedArray[i]){
+                    visitedArray[i] = true;
+                    cout << indexesArray[i] << endl;
+                    indexesQueue->enqueue(i);
+                }
+            }
+
+            while(!indexesQueue->isEmpty()){
+                this->breadthFirstSearch(indexesQueue->dequeue(), visitedArray, indexesQueue);
+            }
+        }
+
+
 
 
 };
