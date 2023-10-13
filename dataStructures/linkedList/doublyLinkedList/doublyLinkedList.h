@@ -156,6 +156,10 @@ class DoublyLinkedList{
             this->tail = mergedPair.second;
         }
 
+        bool isEmpty(){
+            return head == NULL;
+        }
+
     private:
         // Method that sorts the elements of the list using Merge Sort algorithm.
         // Complexity: O(n log(n))
