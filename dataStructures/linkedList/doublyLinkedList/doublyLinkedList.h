@@ -6,7 +6,7 @@
 #define __DoublyLinkedList
 #pragma once
 
-#include <iostream>
+#include<iostream>
 #include<utility>
 using namespace std;
 
@@ -91,8 +91,8 @@ class DoublyLinkedList{
                 }
 
                 temp->next = new Node<T>(data, temp->next, temp);
+                size++;
             }
-            size++;
         }
 
         // Method that removes the first element in the LinkedList.
@@ -139,11 +139,19 @@ class DoublyLinkedList{
         }
 
         // Method that prints all the elements inside the List.
-        void print(){
-            Node<T>* aux = head;
-            while(aux != NULL){
-                aux->print();
-                aux = aux->next;
+        void print(bool reverse = false){
+            if(reverse){
+                Node<T>* aux = tail;
+                while(aux != NULL){
+                    aux->print();
+                    aux = aux->prev;
+                }
+            }else{
+                Node<T>* aux = head;
+                while(aux != NULL){
+                    aux->print();
+                    aux = aux->next;
+                }
             }
         }
 
@@ -156,6 +164,95 @@ class DoublyLinkedList{
             this->tail = mergedPair.second;
         }
 
+        // Method that deletes a node for a given index.
+        // Complexity: O(n)
+        void deleteAt(int index){
+            if(index < 0 || index > this->size - 1){
+                throw -1;
+            }else if(index == 0){
+                this->removeFirst();
+            }else if(index == this->size - 1){
+                this->removeLast();
+            }else{
+                Node<T>* temp = this->head;
+                for(int i = 0; i < index - 1; i++){
+                    temp = temp->next;
+                }
+
+                temp->next = temp->next->next;
+                temp->next->prev = temp;
+                size--;
+            }
+        }
+
+        // Method that returns the max element in the list.
+        // Complexity: O(n)
+        T max(){
+            T maxValue = head->data;
+            Node<T>* aux = head->next;
+            
+            while(aux != NULL){
+                if(aux->data > maxValue){
+                    maxValue = aux->data;
+                }
+                aux = aux->next;
+            }
+            return maxValue;
+        }
+
+        // Method that returns the index of the max element in the list.
+        // Complexity: O(n)
+        int maxIndex(){
+            T maxValue = this->max();
+            Node<T>* aux = head;
+            int index = 0;
+            
+            while(aux != NULL){
+                if(aux->data == maxValue){
+                    break;
+                }
+                index++;
+                aux = aux->next;
+                
+            }
+            return index;
+        }
+
+        // Method that returns the min element in the list.
+        // Complexity: O(n)
+        T min(){
+            T minValue = head->data;
+            Node<T>* aux = head->next;
+
+            while(aux != NULL){
+                if(aux->data < minValue){
+                    minValue = aux->data;
+                }
+                aux = aux->next;
+            }
+            return minValue;
+        }
+
+        // Method that returns the index of the max element in the list.
+        // Complexity: O(n)
+        int minIndex(){
+            T minValue = this->min();
+            Node<T>* aux = head;
+            int index = 0;
+            
+            while(aux != NULL){
+                if(aux->data == minValue){
+                    break;
+                }
+                index++;
+                aux = aux->next;
+                
+            }
+            return index;
+        }
+
+        // Method that shows if the list is empty or not.
+        // Complexity: O(1)
         bool isEmpty(){
             return head == NULL;
         }
@@ -237,9 +334,6 @@ class DoublyLinkedList{
                 return mergedPair;
             }
         }
-
-
-
 };
 
 #endif
