@@ -2,6 +2,10 @@
 // Creation Date: March 25, 2023.
 // Description: A singly linked list implemented in C++.
 
+#ifndef __SinglyLinkedList
+#define __SinglyLinkedList
+#pragma once
+
 #include <iostream>
 using namespace std;
 
@@ -303,6 +307,6 @@ class SinglyLinkedList{
                 return this->head;
             }
         }
-
-
 };
+
+#endif

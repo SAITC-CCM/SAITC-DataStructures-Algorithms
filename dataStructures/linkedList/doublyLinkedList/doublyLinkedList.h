@@ -2,10 +2,13 @@
 // Creation Date: Octiber 12, 2023.
 // Description: A doubly linked list implemented in C++.
 
-#include <iostream>
-using namespace std;
+#ifndef __DoublyLinkedList
+#define __DoublyLinkedList
+#pragma once
 
+#include <iostream>
 #include<utility>
+using namespace std;
 
 template<typename T>
 class Node{
@@ -234,3 +237,5 @@ class DoublyLinkedList{
 
 
 };
+
+#endif
