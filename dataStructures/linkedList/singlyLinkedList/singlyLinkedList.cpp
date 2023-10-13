@@ -1,6 +1,6 @@
 // Author: Dev Society.
 // Creation Date: March 25, 2023.
-// Description: A singly linked list using python.
+// Description: A singly linked list implemented in C++.
 
 #include <iostream>
 using namespace std;
@@ -208,7 +208,6 @@ class SinglyLinkedList{
 
                 // Instantiate an Auxiliare node to travers thorugh the lists.
                 Node<T>* aux = head;
-                bool correctOrder;
 
                 // Divide the list into to sublists and sort them.
                 for(int i = 0; i <= half; i++){
@@ -239,6 +238,7 @@ class SinglyLinkedList{
                     }
                 }
 
+                // Add to mergeList the missing values.
                 if(auxLeft == NULL && auxRight == NULL){
                     return mergeList->head;
 
