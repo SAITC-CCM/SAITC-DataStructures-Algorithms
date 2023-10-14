@@ -30,12 +30,27 @@
         <details>
           <ol>
             <li><a href="dataStructures/linkedList/singlyLinkedList/">Singly Linked List</a></li>
+            <li><a href="dataStructures/linkedList/doublyLinkedList/">Doubly Linked List</a></li>
           </ol>
         </details>
       </a>
     </li>
-    <li><a href="dataStructures/stack">Stack</a></li>
-    <li><a href="dataStructures/queue">Queue</a></li>
+    <li>
+      <a href="dataStructures/stack">
+        Stack
+      </a>
+    </li>
+    <li>
+      <a href="dataStructures/queue">
+        Queue
+        <details>
+          <ol>
+            <li><a href="dataStructures/queue/standardQueue/">Standard Queue</a></li>
+            <li><a href="dataStructures/queue/priorityQueue/">Priority Queue</a></li>
+          </ol>
+        </details>
+      </a>
+    </li>
     <li><a href="dataStructures/hashTable">Hash Table</a></li>
     <li><a href="dataStructures/heap">Heap</a></li>
     <li>
@@ -45,11 +60,41 @@
           <ol>
             <li><a href="dataStructures/trie/standardTrie/">Standard Trie</a></li>
           </ol>
-        </details>
+      </details>
       </a>
     </li>
     <li><a href="dataStructures/tree">Tree</a></li>
-    <li><a href="dataStructures/graph">Graph</a></li>
+    <li>
+      <a href="dataStructures/graph">
+        Graph
+        <details>
+          <ol>
+            <li>
+              <a href="dataStructures/graph/directedGraph/">
+                Directed Graph
+                <details>
+                  <ol>
+                    <li><a href="dataStructures/graph/directedGraph/adjacencyListGraph">Adjacency List</a></li>
+                    <li><a href="dataStructures/graph/directedGraph/adjacencyMatrixGraph">Adjacency Matrix</a></li>
+                  </ol>
+                </details>
+              </a>
+            </li>
+            <li>
+              <a href="dataStructures/graph/undirectedGraph/">
+                Undirected Graph
+                <details>
+                  <ol>
+                    <li><a href="dataStructures/graph/undirectedGraph/adjacencyListGraph">Adjacency List</a></li>
+                    <li><a href="dataStructures/graph/undirectedGraph/adjacencyMatrixGraph">Adjacency Matrix</a></li>
+                  </ol>
+                </details>
+              </a>
+            </li>
+          </ol>
+        </details>
+      </a>
+    </li>
   </ol>
 </details>
 
