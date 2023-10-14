@@ -7,6 +7,7 @@
 #pragma once
 
 #include "../../../queue/standardQueue/StandardQueue.h"
+#include "../../../stack/Stack.h"
 using namespace std;
 
 template <class T> 
@@ -93,6 +94,30 @@ class Graph {
             // Calling the recursiv method.
             this->breadthFirstSearch(startingIndex, visitedArray, indexesQueue);
         }
+
+        // Method that calls the DFS method for a given starting Position
+        // Complexity: O(|V|²) -> T(ni) = |V| + ∑T(nj), j € {1, 2,..., |Ei|}
+        void depthFirstSearch(int startingIndex){
+            bool* visitedArray = new bool[numNodes];
+            Stack<int>* indexesStack = new Stack<int>();
+
+            // Presets for DFS
+            indexesStack->push(startingIndex);
+            visitedArray[startingIndex] = true;
+
+            while(!indexesStack->isEmpty()){
+                int j = indexesStack->pop();
+                cout << indexesArray[j] << endl;
+
+                // Complexity: O(|V|)
+                for(int i = 0; i < numNodes; i++){
+                    if(adjacencyMatrix[j][i] != 0 && !visitedArray[i]){
+                        visitedArray[i] = true;
+                        indexesStack->push(i);
+                    }
+                }
+            }
+        }
     
     private:
         // Method that finds the index of a given node ion the Graph
@@ -129,10 +154,6 @@ class Graph {
                 this->breadthFirstSearch(indexesQueue->dequeue(), visitedArray, indexesQueue);
             }
         }
-
-
-
-
 };
 
 #endif
