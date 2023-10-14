@@ -96,6 +96,7 @@ class DoublyLinkedList{
         }
 
         // Method that removes the first element in the LinkedList.
+        // Complexity: O(1)
         T removeFirst(){
             if(size != 0){
                 T returnValue = head->data;
@@ -120,6 +121,7 @@ class DoublyLinkedList{
         }
 
         // Method that removes the last element in the LinkedList.
+        // Complexity: O(1)
         T removeLast(){
             if(size != 0){
                 T returnValue = tail->data;
@@ -139,6 +141,7 @@ class DoublyLinkedList{
         }
 
         // Method that prints all the elements inside the List.
+        // Complexity: O(n)
         void print(bool reverse = false){
             if(reverse){
                 Node<T>* aux = tail;
