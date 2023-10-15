@@ -166,6 +166,14 @@ class DoublyLinkedList{
             this->head = mergedPair.first;
             this->tail = mergedPair.second;
         }
+        
+        // Method that sorts the elements of the list calling Quick Sort algorithm.
+        // Complexity: O(n log(n))
+        void quickSort(){
+            pair<Node<T>*, Node<T>* > mergedPair = this->quickSortPrivate();
+            this->head = mergedPair.first;
+            this->tail = mergedPair.second;
+        }
 
         // Method that deletes a node for a given index.
         // Complexity: O(n)
@@ -252,7 +260,6 @@ class DoublyLinkedList{
                 }
                 index++;
                 aux = aux->next;
-                
             }
             return index;
         }
@@ -335,6 +342,53 @@ class DoublyLinkedList{
 
             }else{
                 pair<Node<T>*, Node<T>*> mergedPair;
+                mergedPair.first = head;
+                mergedPair.second = tail;
+                return mergedPair;
+            }
+        }
+
+        // Method that sorts the elements of the list using Quick Sort algorithm.
+        // Complexity: O(n log(n))
+        pair<Node<T>*, Node<T>* > quickSortPrivate(){
+            pair<Node<T>*, Node<T>* > mergedPair;
+            if(size > 1){
+                // Obtaining the pivot and the aux.
+                T pivot = head->data;
+                Node<T>* aux = head->next;
+
+                // Instantiate Left and Right Sublists
+                DoublyLinkedList<int> leftList = DoublyLinkedList<int>();
+                DoublyLinkedList<int> rightList = DoublyLinkedList<int>();
+                
+                // If value is smaller than pivot goes to leftList,
+                // otherwise goes to rightList.
+                while(aux != NULL){
+                    if(aux->data > pivot){
+                        rightList.addLast(aux->data);
+                    }else{
+                        leftList.addLast(aux->data);
+                    }
+                    aux = aux->next;
+                }
+                
+                // Because aux is in the heap and we are no longer going
+                // to use it, it is freed.
+                delete(aux);
+                
+                // Apply quickSort to leftList and rightList.
+                rightList.quickSort();
+                leftList.quickSort();
+
+                // Merge leftList, the pivot and rightList.
+                leftList.addLast(pivot);
+                leftList.tail->next = rightList.head;
+                rightList.head->prev = leftList.tail;
+
+                mergedPair.first = leftList.head;
+                mergedPair.second = rightList.tail;
+                return mergedPair;
+            }else{
                 mergedPair.first = head;
                 mergedPair.second = tail;
                 return mergedPair;
