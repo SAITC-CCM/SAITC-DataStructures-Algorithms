@@ -52,7 +52,17 @@
       </a>
     </li>
     <li><a href="dataStructures/hashTable">Hash Table</a></li>
-    <li><a href="dataStructures/heap">Heap</a></li>
+    <li>
+      <a href="dataStructures/heap">
+        Heap
+        <details>
+          <ol>
+            <li><a href="dataStructures/heap/standardHeap/">Standard Heap</a></li>
+            <li><a href="dataStructures/heap/fibonacciHeap/">Fibonacci Heap</a></li>
+          </ol>
+        </details>
+      </a>
+    </li>
     <li>
       <a href="dataStructures/trie">
       Trie
