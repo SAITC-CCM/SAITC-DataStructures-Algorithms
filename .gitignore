@@ -34,3 +34,6 @@
 
 # -- General ignores
 *.DS_Store
+
+# VS Code ignores
+.vscode
