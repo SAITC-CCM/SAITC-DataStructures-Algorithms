@@ -1,0 +1,34 @@
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Suffix array / Suffix sorting](#suffix-array--suffix-sorting)
+  - [Definition](#definition)
+  - [Main benefit](#main-benefit)
+  - [References](#references)
+
+<!-- /code_chunk_output -->
+
+# Suffix array / Suffix sorting
+
+In computer science, a suffix array is a sorted array of all suffixes of a string. It is a data structure used in, among others, full-text indices, data-compression algorithms, and the field of bibliometrics.
+
+## Definition
+
+Let S = S[1]S[2]S[3]...S[n] be an *n-string* and let S[i,j] denote the substrings of S ranging from i to j *inclusive*.
+
+The suffix array *A* of *S* is then defined to be an array of integers providing the starting positions of suffixes of *S* in lexicographical order. This means, an entry *A[i]* contains the starting position of the *i-th* smallest suffix in *S* and thus for all 1 $ 1 \leq i \leq n : S[A[i-1], n] < S[A[i], n]$. 
+
+Each suffix of *S* shows up in *A* exactly once. Suffixes are, hence, simple sorted strings as in a paper dictionary.
+
+## Main benefit
+
+Suffix arrays were introduced by Manber & Myers (1990) in order to improve over the space requirements of suffix trees: Suffix arrays store  *n* integers. Assuming an integer requires *4* bytes, a suffix array requires *4n* bytes in total. This is significantly less than the *20n* bytes which are required by a careful suffix tree implementation.
+
+It may be important to notice that the space complexity of the suffix arrays are in the order $ O(nlog(n)) $. This motivated a trend towards compressed suffix arrays. In this implementation, we will use the **DC3** implementation. 
+
+## References
+
+- Udi Manber, & Myers, G. (1990). Suffix arrays: a new method for on-line string searches. Symposium on Discrete Algorithms, 319–327. https://doi.org/10.5555/320176.320218
+
+- Kärkkäinen, J., Sanders, P., & Burkhardt, S. (2006). Linear work suffix array construction. Journal of the ACM, 53(6), 918–936. https://doi.org/10.1145/1217856.1217858
