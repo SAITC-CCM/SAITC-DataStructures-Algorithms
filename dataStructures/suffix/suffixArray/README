@@ -1,14 +1,3 @@
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Suffix array / Suffix sorting](#suffix-array--suffix-sorting)
-  - [Definition](#definition)
-  - [Main benefit](#main-benefit)
-  - [References](#references)
-
-<!-- /code_chunk_output -->
-
 # Suffix array / Suffix sorting
 
 In computer science, a suffix array is a sorted array of all suffixes of a string. It is a data structure used in, among others, full-text indices, data-compression algorithms, and the field of bibliometrics.
