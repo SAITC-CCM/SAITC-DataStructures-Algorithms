@@ -22,15 +22,16 @@ class SuffixArraySkew
 {
 private:
     std::vector<int> suffixArray;
-
-    std::vector<int> rankTriplets(int offset);
-    void countingSort(std::vector<int>&, std::vector<int> &ranks);
-    void radixSort(std::vector<int>&, std::vector<int> &ranks);
-    std::vector<int> merge(std::vector<int> &ranks1, std::vector<int> &ranks2, std::vector<int> & offset);
+    std::vector<int> text;
+    int ALPHABET_SIZE;
+    inline bool leq(int a1, int a2, int b1, int b2);
+    inline bool leq(int a1, int a2, int a3, int b1, int b2, int b3);
+    static void radixPass(std::vector<int> &A, std::vector<int> &B, std::vector<int> &R, int offset, int n, int K);
+    void skew(std::vector<int> &text, std::vector<int> &sa, int n, int k);
 
 public:
     SuffixArraySkew(std::string text);
-    ~SuffixArraySkew();
+    void print();
 };
 
 #endif // SUFFIX_ARRAY_SKEW_H
